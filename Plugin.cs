@@ -39,6 +39,7 @@ namespace HarderV2
         {
             if (SceneManager.GetActiveScene().name == "Level 4-4" && !assignedV2Values)
             {
+                assignedV2Values = true;
                 AssignV2Values();
             }
         }
@@ -56,8 +57,6 @@ namespace HarderV2
 
         private void AssignV2Values()
         {
-            assignedV2Values = true;
-
             if (v2HealthMultiplier.Value < 1 || v2DamageMultiplier.Value < 1)
             {
                 MonoSingleton<AssistController>.Instance.cheatsEnabled = true;
