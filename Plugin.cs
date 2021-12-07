@@ -48,6 +48,7 @@ namespace HarderV2
         {
             if (SceneManager.GetActiveScene().name == "Level 4-4")
             {
+                assignedV2Values = false;
                 foreach (CheckPoint c in Resources.FindObjectsOfTypeAll<CheckPoint>())
                 {
                     c.onRestart.AddListener(AssignV2Values);
